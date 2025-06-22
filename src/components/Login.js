@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ function Login() {
           name="password"
           value={formData.password}
           onChange={handleChange}
-        />      
+        />
       </div>
       <button type="submit">Login</button>
     </form>
